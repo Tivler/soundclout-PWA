@@ -1,0 +1,53 @@
+@mixin color {
+    background: #f50;
+    background: linear-gradient(#f70,#f30);
+}
+
+.filter {
+
+    &__title {
+        font-size: .9em;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+
+    &__button {
+        color: #fff;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+        padding:14px 30px 15px;
+        border-radius: 5px;
+        width: inherit;
+        max-width: 185px;
+        transition: .3s;
+        margin-top: 1%;
+        @include color();
+
+        &:hover {
+            @include color();
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &--wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 205px);
+        grid-gap: 10px;
+        justify-content: center;
+
+        @media only screen and (max-width: 1400px) {
+            grid-template-columns: repeat(2, 205px);
+        }
+
+        @media only screen and (max-width: 500px) {
+            grid-template-columns: 205px;
+            margin-bottom: 2em;
+        }
+    }
+
+}

@@ -1,0 +1,54 @@
+@mixin slider-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin color {
+    background: #f50;
+    background: linear-gradient(#f70,#f30);
+}
+
+.background-image {
+    height: 60vh;
+    width: 100%;
+    min-width: 400px;
+    @include slider-image();
+    @include color();
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    height: 60vh;
+    width: 100%;
+    min-width: 400px;
+    text-align: center;
+    font-family: 'Montserrat' , sans-serif;
+
+    &__title {
+        color: #fff;
+        font-size: 2.8em;
+        letter-spacing: -2px;
+        font-weight: 700;
+        margin-bottom: 1%;
+    }
+
+    &__subtitle {
+        color: #fff;
+        margin-bottom: 2%;
+        font-size: 16px;
+        font-weight: 600;
+
+        @media only screen and (max-width: 550px) {
+            margin-bottom: 3%;
+        }
+
+        @media only screen and (max-width: 300px) {
+            font-size: 14px;
+        }
+    }
+}
