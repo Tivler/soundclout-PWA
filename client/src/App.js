@@ -9,7 +9,6 @@ import Community from './pages/Community';
 import Contacts from './pages/Contacts';
 
 class App extends React.Component {
-
   render () {
     return (
         <Router>

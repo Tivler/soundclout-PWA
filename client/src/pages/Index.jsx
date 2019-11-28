@@ -8,13 +8,61 @@ import FeaturedAlbums from '../components/feature/FeaturedAlbums';
 import SpotlightArtist from '../components/feature/SpotlightArtist';
 import Quote from '../components/feature/Quote';
 
+import InstallButton from '../components/core/installBtn';
+
 class Index extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            installPrompt: true,
+            installButton: true 
+        }
+
+        this.installApp = this.installApp.bind(this);
+    }
+
+
+    installApp = async () => {
+        let { installPrompt } = this.state;
+
+        if(!installPrompt) return false;
+        installPrompt.prompt();
+        let outcome = await installPrompt.userChoice;
+        if(outcome.outcome === 'accepted'){
+          console.log("App Installed")
+        } else{
+          console.log("App not installed");
+        }
+        // Remove the event reference
+        installPrompt=null;
+        // Hide the button
+        this.setState({
+          installButton: false
+        })
+      }
 
     componentDidMount() {
         document.title = 'Soundclout'
+
+        console.log("Listening for Install prompt");
+        window.addEventListener('beforeinstallprompt',e=>{
+            // For older browsers
+            e.preventDefault();
+            console.log("Install Prompt fired");
+            this.installPrompt = e;
+            // See if the app is already installed, in that case, do nothing
+            if((window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true){
+            return false;
+            }
+            // Set the state variable to make button visible
+            this.setState({
+              installButton:true
+            })
+        })
     }
 
     render () {
+        const { installButton } = this.state;
         return (
         <>
         <Navbar 
@@ -45,6 +93,12 @@ class Index extends React.Component {
             position="Founder, Soundclout"
         />
         <Footer />
+        <InstallButton
+           condition={installButton}
+            //  style={styles.installBtn}
+           onClick={this.installApp}>
+               Install app!
+        </InstallButton>
         </>
     )
     }
