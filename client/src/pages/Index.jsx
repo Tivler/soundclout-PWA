@@ -8,7 +8,7 @@ import FeaturedAlbums from '../components/feature/FeaturedAlbums';
 import SpotlightArtist from '../components/feature/SpotlightArtist';
 import Quote from '../components/feature/Quote';
 
-import InstallButton from '../components/core/installBtn';
+// import InstallButton from '../components/core/installBtn';
 
 class Index extends React.Component {
     constructor() {
@@ -94,12 +94,12 @@ class Index extends React.Component {
             position="Founder, Soundclout"
         />
         <Footer />
-        <InstallButton
+        {/* <InstallButton
            condition={installButton}
             //  style={styles.installBtn}
            onClick={this.installApp}>
                Install app!
-        </InstallButton>
+        </InstallButton> */}
         </>
     )
     }
