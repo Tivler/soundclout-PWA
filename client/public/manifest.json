@@ -3,13 +3,13 @@
   "name": "SoundClout",
   "icons": [
     {
-      "src": "icon.ico",
-      "type": "image/PNG",
+      "src": "icon.png",
+      "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "mini.ico",
-      "type": "image/PNG",
+      "src": "mini.png",
+      "type": "image/png",
       "sizes": "192x192"
     }
   ],
