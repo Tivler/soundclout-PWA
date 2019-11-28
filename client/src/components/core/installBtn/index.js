@@ -1,4 +1,5 @@
 import React from 'react';
+import './_installBtn.scss';
 
 export default function InstallButton (props) {
         let { condition = true, children = null } = props;
