@@ -42,6 +42,7 @@ class Index extends React.Component {
       }
 
     componentDidMount() {
+        let { installPrompt } = this.state;
         document.title = 'Soundclout'
 
         console.log("Listening for Install prompt");
@@ -49,14 +50,14 @@ class Index extends React.Component {
             // For older browsers
             e.preventDefault();
             console.log("Install Prompt fired");
-            this.installPrompt = e;
+            installPrompt = e;
             // See if the app is already installed, in that case, do nothing
             if((window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true){
             return false;
             }
             // Set the state variable to make button visible
             this.setState({
-              installButton:true
+              installButton: true
             })
         })
     }

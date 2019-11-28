@@ -5,8 +5,8 @@ export default function InstallButton (props) {
         if (!condition) return null;
 
         return (
-            <>
+            <div className="InstallButton button">
                 {children}
-            </>
+            </div>
         );
 }
