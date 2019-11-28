@@ -133,6 +133,3 @@ export function unregister() {
     });
   }
 }
-
-
-register();
