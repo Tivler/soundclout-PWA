@@ -213,13 +213,13 @@
 }
 
 .drake {
-    background: url(/images/artist/drake.png);
+    background: url(/images/artist/drake.webp);
     @include album-image();
 }
 
 
 .meek {
-    background: url(/images/artist/meek.jpg);
+    background: url(/images/artist/meek.webp);
     @include album-image();
     background-position: center;
 }
