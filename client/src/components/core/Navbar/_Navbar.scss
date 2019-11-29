@@ -160,12 +160,11 @@
                 padding-right: 40px;
 
                 @media only screen and (max-width: 950px) {
-                    margin: 40% 0 5% 0;
+                    margin: 30vh 0 10% 0;
                     padding-right: 0px;
                 }
 
                 @media only screen and (max-width: 570px) { 
-                    margin-top: 45%;
                     padding-right: 0px;
                 }
             }
@@ -174,7 +173,7 @@
                 padding-right: 40px;
 
                 @media only screen and (max-width: 950px) {
-                    margin: 0 0 5% 0;
+                    margin: 0 0 10% 0;
                     padding-right: 0px;
                 }
             }
@@ -195,7 +194,7 @@
             }
 
             @media only screen and (max-width: 570px) { 
-                font-size: 1.2em;
+                font-size: 2em;
             }
         }
     }
@@ -219,7 +218,7 @@
 @media only screen and (max-width: 950px) {
     #nav:checked ~ .nav__list--wrapper {
         height: 100vh;
-        background-color: rgba(0, 0, 0, .95);
+        background-color: rgba(0, 0, 0, .99);
     }
 }
 

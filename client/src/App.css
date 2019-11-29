@@ -17,3 +17,9 @@ html {
     min-width: 400px;
     font-family: 'Montserrat' , sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+    .quote {
+        display: none;
+    }
+}

@@ -50,12 +50,16 @@
             grid-template-columns: 500px;
         }
 
+        @media only screen and (max-width: 600px) {
+            margin-bottom: 4em;
+        }
+
         @media only screen and (max-width: 500px) {
             grid-template-columns: 375px;
         }
 
-        @media only screen and (max-width: 500px) {
-            grid-template-columns: 300px;
+        @media only screen and (max-width: 400px) {
+            grid-template-columns: 350px;
         }
 
         &--link {
@@ -213,13 +217,13 @@
 }
 
 .drake {
-    background: url(/images/artist/drake.webp);
+    background: url(/images/artist/drake.png);
     @include album-image();
 }
 
 
 .meek {
-    background: url(/images/artist/meek.webp);
+    background: url(/images/artist/meek.jpg);
     @include album-image();
     background-position: center;
 }
