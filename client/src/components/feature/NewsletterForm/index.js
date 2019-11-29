@@ -110,7 +110,7 @@ class NewsletterForm extends React.Component {
                 <form className="form" onSubmit={this.handleSubmit} method="POST" action="/submit">
                     <h1 className="form__title">Subscribe</h1>
 
-                    <label htmlFor="inputFirstName"></label>
+                    <label htmlFor="inputFirstName">Enter Your First Name</label>
                     <input 
                         name="firstName" 
                         placeholder="First Name" 
@@ -119,9 +119,10 @@ class NewsletterForm extends React.Component {
                         id="inputFirstName" 
                         className="form--control"
                     />
+
                     <div className="error firstNameError">{this.state.firstNameError}</div>
 
-                    <label htmlFor="inputLastName"></label>
+                    <label htmlFor="inputLastName">Enter Your Last Name</label>
                     <input 
                         name="lastName" 
                         placeholder="Last Name" 
@@ -132,7 +133,7 @@ class NewsletterForm extends React.Component {
                     />
                     <div className="error lastNameError">{this.state.lastNameError}</div>
 
-                    <label htmlFor="inputEmail"></label>
+                    <label htmlFor="inputEmail">Enter Your Email Address</label>
                     <input 
                         name="email" 
                         placeholder="Email Address" 
@@ -143,8 +144,7 @@ class NewsletterForm extends React.Component {
                     />
                     <div className="error emailError">{this.state.emailError}</div>
 
-                   
-
+                    <label htmlFor="inputMessage">Got Any Questions</label>
                     <textarea id="inputMessage" className="form--control" placeholder="Leave us a message!"></textarea>
 
                     <button className="form--button" id="submitButton" type="submit">Submit</button>

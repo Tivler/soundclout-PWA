@@ -187,7 +187,7 @@
 
         &__artist {
             font-size: 2.5em;
-            color: #F50;
+            color: #4F4F4F;
             margin-bottom: 2%;
         }
 
@@ -201,7 +201,7 @@
             text-transform: uppercase;
             font-weight: 600;
             text-decoration: none;
-            background-color: #f50;
+            background-color: #4F4F4F;
             padding:16px 48px 18px;
             border-radius: 5px;
             width: fit-content;
@@ -213,13 +213,13 @@
 }
 
 .drake {
-    background: url(/images/drake.png);
+    background: url(/images/artist/drake.webp);
     @include album-image();
 }
 
 
 .meek {
-    background: url(/images/meek.jpg);
+    background: url(/images/artist/meek.webp);
     @include album-image();
     background-position: center;
 }

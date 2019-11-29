@@ -41,6 +41,12 @@
         padding: 55px 55px 65px 55px;            
     }
     
+    label {
+        color: #fff;
+        margin-top: 20px;
+        font-size: .7em;
+        text-align: start;
+    }
 
     &__title {
         text-transform: uppercase;
@@ -101,20 +107,23 @@
  }
  
 #inputFirstName {
-    margin-top: 35px;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
  
 #inputLastName {
+    margin-top: 15px;
     margin-bottom: 15px;
 }
  
 
 #inputEmail {
+    margin-top: 15px;
     margin-bottom: 25px;
 }
  
 #inputMessage {
+    margin-top: 15px;
      margin-bottom: 35px;
      font-size: 13px;
      resize: none;
