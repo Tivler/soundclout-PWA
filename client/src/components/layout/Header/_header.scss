@@ -34,7 +34,17 @@
         font-size: 2.8em;
         letter-spacing: -2px;
         font-weight: 700;
-        margin-bottom: 1%;
+        width: 90%;
+        margin: 0 auto 1% auto;
+        margin-bottom: 2%;
+
+        @media only screen and (max-width: 575px) {
+           font-size: 2em;
+           width: 90%;
+           margin: 0 auto;
+           line-height: 40px;
+           margin-bottom: 20px;
+        }
     }
 
     &__subtitle {
@@ -43,8 +53,9 @@
         font-size: 16px;
         font-weight: 600;
 
-        @media only screen and (max-width: 550px) {
-            margin-bottom: 3%;
+        @media only screen and (max-width: 500px) {
+            width: 90%;
+            margin: 0 auto;
         }
 
         @media only screen and (max-width: 300px) {

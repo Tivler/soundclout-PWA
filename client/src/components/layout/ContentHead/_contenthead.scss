@@ -6,6 +6,10 @@
     margin: 0 auto;
     padding-top: 5em;
 
+    @media only screen and (max-width: 500px) {
+        padding-top: 2em;
+    }
+
     &__title {
         color: #000;
         font-size: 3em;

@@ -36,17 +36,16 @@
 
     &--wrapper {
         display: grid;
-        grid-template-columns: repeat(4, 205px);
-        grid-gap: 10px;
+        grid-template-columns: repeat(4, 185px);
+        grid-gap: 20px;
         justify-content: center;
 
         @media only screen and (max-width: 1400px) {
-            grid-template-columns: repeat(2, 205px);
+            grid-template-columns: repeat(2, 185px);
         }
 
         @media only screen and (max-width: 500px) {
-            grid-template-columns: 205px;
-            margin-bottom: 2em;
+            grid-template-columns: 185px;
         }
     }
 

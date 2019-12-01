@@ -38,10 +38,6 @@
             grid-template-columns: 375px;
         }
 
-        @media only screen and (max-width: 500px) {
-            grid-template-columns: 300px;
-        }
-
         &--link {
             height: 350px;
             width: inherit;

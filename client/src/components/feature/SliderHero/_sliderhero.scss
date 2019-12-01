@@ -124,11 +124,20 @@ $image-overlay: linear-gradient(rgba(0, 0, 0, 0.25));
 
             @media only screen and (max-width: 1075px) {
               font-size: 2.75em;
+              margin-bottom: 12px;
             }
 
-            @media only screen and (max-width: 550px) {
-              font-size: 2.15em;
-              margin-bottom: 3%;
+            @media only screen and (max-width: 675px) {
+              line-height: 50px;
+              margin-bottom: 25px;
+            }
+
+            @media only screen and (max-width: 500px) {
+              font-size: 2em;
+              width: 90%;
+              margin: 0 auto;
+              line-height: 40px;
+              margin-bottom: 20px;
             }
 
             @media only screen and (max-width: 300px) {
@@ -143,8 +152,14 @@ $image-overlay: linear-gradient(rgba(0, 0, 0, 0.25));
             font-weight: 600;
             z-index: 2;
 
-            @media only screen and (max-width: 550px) {
-              margin-bottom: 3%;
+            @media only screen and (max-width: 1075px) {
+              margin-bottom: 20px;
+            }
+
+            @media only screen and (max-width: 500px) {
+              width: 90%;
+              margin: 0 auto;
+              margin-bottom: 20px;
             }
 
             @media only screen and (max-width: 300px) {

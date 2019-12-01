@@ -9,8 +9,12 @@
     text-align: center;
     font-family: 'Montserrat' , sans-serif;
 
+    @media only screen and (max-width: 1024px) {
+        margin-bottom: 0;
+    }
+
     @media only screen and (max-width: 525px) {
-        margin: 15% 0% 0% 0;
+        margin: 22px 0 0 0;
     }
 
     &__title {
@@ -66,10 +70,6 @@
 
         @media only screen and (max-width: 500px) {
             grid-template-columns: 375px;
-        }
-
-        @media only screen and (max-width: 500px) {
-            grid-template-columns: 300px;
         }
 
         &--link {
