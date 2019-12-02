@@ -34,7 +34,8 @@ class Products extends React.Component {
                 method={() => window.scrollTo(0, 450)}
             />
             <SpotlightArtist 
-                class="meek"
+                path="./webp/artist/meek.webp"
+                source="./images/artist/meek.jpg"
                 link="https://www.instagram.com/meekmill/"
                 overlay="Click for more Meek Mill"
                 artist="Meek Mill"

@@ -55,6 +55,7 @@
         justify-content: center;
         margin-top: 2%;
         margin-bottom: 7%;
+        position: relative;
 
         @media only screen and (max-width: 1400px) {
             grid-template-columns: 350px 350px;
@@ -81,6 +82,7 @@
             transition: .2s ease-in-out;
             color: #fff;
             text-decoration: none;
+            position: relative;
 
             @media only screen and (min-width: 2000px) {
                 max-width: 450px;
@@ -108,6 +110,15 @@
                     transition: none;
                 }
             }
+        }
+
+        &__image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 350px;
+            width: -webkit-fill-available;
+            z-index: -2;
         }
 
         &--overlay {

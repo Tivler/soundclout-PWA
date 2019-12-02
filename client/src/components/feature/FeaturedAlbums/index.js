@@ -28,7 +28,7 @@ class FeaturedAlbums extends React.Component {
             />
 
             <div className="featured__wrapper">
-                {this.state.products.map(p => <FeatureCard id={p.featured_class} key={p.featured_class}  url={p.featured_url} title={p.featured_title} artist={p.featured_artist} price={p.featured_price}/>)}
+                {this.state.products.map(p => <FeatureCard key={p._id} path={p.featured_path} source={p.featured_source} url={p.featured_url} title={p.featured_title} artist={p.featured_artist} price={p.featured_price}/>)}
             </div>
         </div>
         )

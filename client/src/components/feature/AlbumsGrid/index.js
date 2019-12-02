@@ -89,7 +89,7 @@ class AlbumsGrid extends React.Component {
         
         <div className="album">
             <div className="album__wrapper">
-                {this.state.products.map(p => <AlbumCard id={p.album_class} key={p.album_class}  url={p.album_url} title={p.album_title} artist={p.album_artist} price={p.album_price}/>)}
+                {this.state.products.map(p => <AlbumCard key={p._id} path={p.album_path} source={p.album_source} url={p.album_url} title={p.album_title} artist={p.album_artist} price={p.album_price}/>)}
             </div>
 
             <div className="filter">

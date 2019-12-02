@@ -12,10 +12,15 @@ const SpotlightArtist = (props) => {
         />
 
         <div className="spotlight__wrapper">
-             <a className={`spotlight__wrapper--link ${props.class}`} rel="noopener noreferrer" href={props.link} target="_blank">
+             <a className={`spotlight__wrapper--link`} rel="noopener noreferrer" href={props.link} target="_blank">
                 <div className="spotlight__wrapper--overlay">
                     <h3 className="spotlight_wrapper__heading">{props.overlay}</h3>
                 </div>
+
+                <picture>
+                    <source srcSet={`${props.source}`} type="image/jpeg" /> 
+                    <img className="spotlight__wrapper__image" src={`${props.path}`} alt="alt"/>
+                </picture>
             </a>
 
             <div className="spotlight__content">

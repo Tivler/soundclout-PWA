@@ -22,7 +22,8 @@ class Index extends React.Component {
         <SliderHero />
         <FeaturedAlbums />
         <SpotlightArtist 
-            class="drake"
+            path="./webp/artist/drake.webp"
+            source="./images/artist/drake.jpg"
             link="https://www.instagram.com/champagnepapi/?hl=en"
             overlay="Click for more Drake"
             artist="Drake"
