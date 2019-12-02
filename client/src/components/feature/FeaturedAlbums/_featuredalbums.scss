@@ -170,36 +170,6 @@
     }
 }
 
-.One {
-    background: url(/images/albums/49.jpg);
-    @include album-image();
-}
-
-.Two {
-    background: url(/images/albums/50.jpg);
-    @include album-image();
-}
-
-.Three {
-    background: url(/images/albums/50.jpg);
-    @include album-image();
-}
-
-.Four {
-    background: url(/images/albums/6.jpg);
-    @include album-image();
-}
-
-.Five {
-    background: url(/images/albums/7.jpg);
-    @include album-image();
-}
-
-.Six {
-    background: url(/images/albums/8.jpg);
-    @include album-image();
-}
-
 .featured__wrapper--link:hover .featured__wrapper--overlay {
     display: flex;
     flex-direction: column;
