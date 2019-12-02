@@ -8,9 +8,11 @@ const mongoose = require('mongoose');
 const uri = process.env.ATLAS_URI;
 const app = express()
 const PORT = process.env.PORT || 5000
+const compression = require('compression');
 
 //INSTANTIATE MIDDLEWARE
 
+app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
 app.use(pino);
