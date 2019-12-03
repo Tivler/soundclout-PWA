@@ -1,4 +1,4 @@
-# E-Commerce Website | [Run4It](https://soundclout-pwa.herokuapp.com/)
+# E-Commerce Website | [Soundclout](https://soundclout-pwa.herokuapp.com/)
 
 ## Getting Started
 
@@ -13,7 +13,7 @@
 
 3. Scroll to the right until you see `Add to Home Screen` and tap on it.
 
-4. SoundClout should now be available on your phone.
+4. Soundclout should now be available on your phone.
 
 ## Preview of Application
 
