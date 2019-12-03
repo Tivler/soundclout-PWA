@@ -1,4 +1,4 @@
-# E-Commerce Website | [Soundclout](https://soundclout-pwa.herokuapp.com/)
+# Website | [Soundclout](https://soundclout-pwa.herokuapp.com/)
 
 ## Getting Started
 
