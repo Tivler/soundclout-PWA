@@ -1,24 +1,19 @@
-# E-Commerce Website | [Run4It](https://run4it-pwa.herokuapp.com/)
-This project is an e-commerce website centered around athletic apparel. It contains three pages routed together through react. The home page has slider images. The product page contains products, pulled from a MongoDB database, that allows a user to filter by product type and price. The contact page has a form that dynamically adds the comment to the comment slider so users can see their comments. A secure admin page has been added that allows access to the products. React and MongoDB is linked together through Express. The website has been modified to become a progressive web app that can be now be downloaded onto mobile devices.
+# E-Commerce Website | [Run4It](https://soundclout-pwa.herokuapp.com/)
 
 ## Getting Started
 
-1. Use `npm install` to install all needed dependencies as listed by the package.json.
+1. Use `npm install` to install all dependencies as from the package.json.
 
-2. Run `mongod` to start the MongoDB process and run it in the background.
-
-3. Create a `.env` in both the root directory and the test directory. The `.env` in the test directory should contain a different port for the tests.
-
-4. Use `npm start` to start the application from the root directory.
+4. Use `npm start` to start the application and seed the database.
 
 ## Getting Started (Mobile)
-1. Open the [link](https://run4it-pwa.herokuapp.com/) on your mobile device.
+1. Open the [link](https://soundclout-pwa.herokuapp.com/) on your mobile device.
 
 2. On Safari, hit the download button on the bottom.
 
 3. Scroll to the right until you see `Add to Home Screen` and tap on it.
 
-4. Run4It should now be available on your phone.
+4. SoundClout should now be available on your phone.
 
 ## Preview of Application
 
